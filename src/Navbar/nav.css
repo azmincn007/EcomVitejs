@@ -1,0 +1,71 @@
+/* nav.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .logo{
+    font-family: "Volkhov", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+  }
+  
+  .contents {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+      
+  }
+  
+  .contents div {
+    margin-right: 3rem;
+  }
+  
+  .menu-icon {
+    display: none; /* Initially hide the menu icon */
+  }
+  
+  .contents.open {
+    display: block;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Show the menu icon for smaller screens */
+      cursor: pointer;
+    }
+  
+    .contents {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      border: 1px solid #ccc;
+    }
+  }
+ 
+
+
+
+ /* Buttons */
+.signup-button{
+    button{
+        width: 6rem;
+        height: 2.2rem;
+        background-color: black;
+        color: white;
+        outline: none;
+        border-radius: 0.4rem;
+    }
+}

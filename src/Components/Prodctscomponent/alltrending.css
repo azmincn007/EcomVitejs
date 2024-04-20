@@ -1,0 +1,58 @@
+.trending-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 5% 0;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.titlecontainer{
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    padding: 5% 0%; 
+}
+
+/* alltrending.css */
+.card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as   */
+    margin: -10px; /* Adjust margin to prevent spacing issues */
+  }
+  
+  .cardcontainer {
+    padding: 3% 0rem;
+    width: calc(25% - 40px); /* Adjust width to fit 4 cards in a row */
+    margin: 10px; /* Adjust margin to add space between cards */
+  }
+  
+  /* Add other styles as needed */
+  
+  /* Responsive styles */
+  @media screen and (max-width: 1200px) {
+    .cardcontainer {
+      width: calc(33.33% - 20px); /* Adjust width for 3 cards in a row */
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .cardcontainer {
+      width: calc(50% - 20px); /* Adjust width for 2 cards in a row */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .cardcontainer {
+      width: calc(100% - 20px); /* Adjust width for 1 card per row */
+    }
+  }
+  
+
+
+
+/*icons buttons*/
+.fire{
+    color: orangered;
+}
