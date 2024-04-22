@@ -4,7 +4,7 @@ import { useLocation } from 'react-router-dom';
 import Navbar from '../../Navbar/Navbar';
 import { FaAngleRight, FaFire } from "react-icons/fa";
 import './alltrending.css';
-import { Grid } from '@material-ui/core';
+import { Grid } from '@mui/material';
 
 const Alltrending = () => {
   const location = useLocation();

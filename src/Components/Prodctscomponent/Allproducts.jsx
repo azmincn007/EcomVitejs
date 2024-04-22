@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Grid, Button } from '@material-ui/core';
 import { useQuery } from 'react-query';
 import './allproducts.css'; // Import your CSS file
+import { Grid } from '@mui/material';
 
 function Allproducts() {
     const baseUrl = 'https://portal.umall.in/';

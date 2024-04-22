@@ -1,10 +1,10 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
 import img1 from '../Landingcomponents/1.png';
 import img2 from '../Landingcomponents/2.png';
 import img3 from '../Landingcomponents/3.png';
 import img4 from '../Landingcomponents/4.png';
 import './Styleone.css'
+import { Grid } from '@mui/material';
 
 function Styleone() {
   return (

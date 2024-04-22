@@ -1,6 +1,5 @@
 import React from 'react';
 import { useQuery } from 'react-query';
-import { Grid, Button, useMediaQuery } from '@material-ui/core';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 import "swiper/css";
@@ -9,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Link, useNavigate } from 'react-router-dom';
 import './trending.css';
+import { Button, Grid } from '@mui/material';
 
 function Trending() {
   const navigate = useNavigate();
