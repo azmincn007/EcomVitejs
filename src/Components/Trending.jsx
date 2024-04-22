@@ -6,9 +6,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { Button, Grid } from '@mui/material';
 import { Link, useNavigate } from 'react-router-dom';
 import './trending.css';
-import { Button, Grid } from '@mui/material';
 
 function Trending() {
   const navigate = useNavigate();
@@ -44,8 +44,6 @@ function Trending() {
     navigate('/trending', { state: { data2 } });
   };
 
-
-
   return (
     <div className="trending-products">
       <Grid container spacing={2}>
@@ -65,18 +63,29 @@ function Trending() {
           </div>
         </Grid>
         {/* Right Carousal */}
-        <Grid item xs={12} md={9} >
+        <Grid item xs={12} md={9}>
           <div className="rightcarousal">
-            <Swiper 
+            <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={0}
-              slidesPerView={3.5}
+              slidesPerView={1}
+              breakpoints={{
+                600: {
+                  slidesPerView: 1.5,
+                },
+                960: {
+                  slidesPerView: 2.5,
+                },
+                1280: {
+                  slidesPerView: 3.5,
+                },
+              }}
               navigation
               pagination={{ clickable: true }}
               autoplay={{ delay: 3000 }}
             >
               {imageURLs.map((url, index) => (
-                <SwiperSlide key={index}  style={{ border: '1px solid #e0e0e0', borderRadius: '5px', padding: '10px',height:'100%' }}>
+                <SwiperSlide key={index} style={{ border: '1px solid #e0e0e0', borderRadius: '5px', padding: '10px', height: '100%' }}>
                   <img src={url} alt="" />
                 </SwiperSlide>
               ))}

@@ -1,25 +1,2 @@
-.righttop{
-    display: flex;
-
-    p{
-        margin-right: 10%;
-    }
-}
-.topfooter{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0rem 5%;
-}
-
-.downfooter{
-    display: flex;
-    justify-content: center;
-   
-}
-
-.footer{
-    padding: 0 8%;
-    font-family: "Poppins", sans-serif;
-
-}
+.topfooter{display: flex;
+justify-content: space-between;}
