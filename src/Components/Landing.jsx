@@ -15,6 +15,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useQuery } from "react-query";
 import Trending from "./Trending";
+import Allproducts from "./Prodctscomponent/Allproducts";
+import Styleone from "./Landingcomponents/Styleone";
+import Footer from "./Landingcomponents/Footer";
 
 function Landing() {
   const fetchData = async () => {
@@ -74,6 +77,10 @@ function Landing() {
         </Swiper>
       </div>
       <Trending/>
+
+      <Allproducts/>
+      <Styleone/>
+      <Footer/>
 
    
     </div>

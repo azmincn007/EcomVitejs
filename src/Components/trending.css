@@ -1,8 +1,6 @@
 
 .trending-products{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 10%;
+  padding:5% 5% ;
 
    
     
@@ -10,7 +8,7 @@
     
 
     .leftcontents{
-      width: 30%;
+      
 
       .head{
         font-family: "Volkhov", serif;
@@ -45,10 +43,12 @@
 
     }
 
-    .rightcarousal{
-      width: 70%;
-    }
+   
 }
+
+
+
+
 
 
 
