@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Trending from './Components/Trending';
 import Alltrending from './Components/Prodctscomponent/Alltrending';
 import { ThemeProvider, createTheme } from '@mui/material';
+import Signup from './authentications/Signup';
+import Login from './authentications/Login';
 const queryClient = new QueryClient();
 const theme = createTheme();
 function App() {
@@ -17,6 +19,9 @@ function App() {
       <Routes>
         <Route path='/' element={<Landing />}/> 
         <Route path='/trending' element={<Alltrending/>}/> 
+        <Route path='/signup' element={<Signup/>}/> 
+        <Route path='/login' element={<Login/>}/> 
+
 
 
       </Routes>

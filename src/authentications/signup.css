@@ -1,0 +1,102 @@
+.signup {
+    height: 100vh;
+    display: flex;
+  }
+  
+  .signup-image {
+    width: 50%;
+    height: 100%;
+    background: url('./re.png');
+    background-size: cover;
+  }
+  
+  .signup-container {
+    width: 50%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .headsignup,
+  .forgetpass,
+  .but,
+  .alreadyacc {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .input-field {
+    width: 70%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.5rem;
+  }
+  
+  .button {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    background-color: black;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    width: 8rem;
+    outline: none;
+    height: 3rem;
+    border-radius: .4rem;
+  }
+  
+  .inputs {
+    display: flex;
+    justify-content: center;
+    padding-left: 10%;
+  }
+  
+  .but {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .alreadyacc {
+    display: flex;
+    justify-content: center;
+
+   
+
+    .spanlog{
+        color: blue;
+        font-weight: 600;
+        text-decoration: none;
+    }
+  }
+
+  .fasco{
+    font-family: "Volkhov", serif;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+
+  }
+  
+  /* Media query to hide image div on medium and extra-small screens */
+  @media screen and (max-width: 960px) {
+    .signup-image {
+      display: none;
+    }
+  
+    .signup-container {
+      width: 100%;
+  
+      .inputs {
+        padding-left: 20%;
+      }
+    }
+  }
+  

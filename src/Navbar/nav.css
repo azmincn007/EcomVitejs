@@ -95,3 +95,6 @@
   outline: none;
   border-radius: 0.4rem;
 }
+
+.linkdec{text-decoration: none;
+color: black;}

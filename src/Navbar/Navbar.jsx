@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './nav.css';
 import { IoMdMenu, IoMdClose } from "react-icons/io"; // Import close icon
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -24,8 +25,8 @@ function Navbar() {
         <div>Deals</div>
         <div>New Arrivals</div>
         <div>Packages</div>
-        <div>Sign in</div>
-        <div className='signup-button'><button>Signup</button></div>
+      <div>  <Link className='linkdec' to={'/login'}>Sign in</Link></div>
+        <div className='signup-button'><Link to={'/signup'}><button>Signup</button></Link></div>
         <div className="close-button" onClick={closeDropdown}><IoMdClose /></div> {/* Close button */}
       </div>
     </div>
