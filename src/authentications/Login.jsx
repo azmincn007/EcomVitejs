@@ -44,7 +44,9 @@ function Login() {
 
       if (response.ok) {
         const data = await response.json();
-        if (data.sts === '01') { // Check for successful login status
+        
+        if (data.sts === '01') { 
+          localStorage.setItem('userName', data.user.name);
           // Navigate to the landing page
           navigate('/');
         } else {

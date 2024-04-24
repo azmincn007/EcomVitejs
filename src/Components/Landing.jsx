@@ -18,6 +18,7 @@ import Trending from "./Trending";
 import Allproducts from "./Prodctscomponent/Allproducts";
 import Styleone from "./Landingcomponents/Styleone";
 import Footer from "./Landingcomponents/Footer";
+import Newsletter from "./Landingcomponents/Newsletter";
 
 function Landing() {
   const fetchData = async () => {
@@ -80,6 +81,7 @@ function Landing() {
 
       <Allproducts/>
       <Styleone/>
+      <Newsletter/>
       <Footer/>
 
    

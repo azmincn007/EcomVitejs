@@ -1,2 +1,58 @@
-.topfooter{display: flex;
-justify-content: space-between;}
+.footer {
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 2vh 0; /* Adjust padding based on vh */
+  }
+  
+  .ftop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 85%;
+    padding: 0 1rem; /* Adjust padding as needed */
+  }
+  
+  .ftop h3 {
+    font-size: 5vh; /* Adjust font size based on vh */
+    margin: 0;
+    font-family: "Volkhov", serif;
+    color: #484848;
+  }
+  
+  .ftopcontents {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .ftopcontents p {
+    font-size: 2vh; /* Adjust font size based on vh */
+    margin: 1vh 0; /* Adjust margin based on vh */
+    padding: 0 2%; /* Adjust padding as needed */
+  }
+  
+  /* Media query for small devices */
+  @media (max-width: 768px) {
+    .footer {
+      padding: 1vh 0; /* Adjust padding based on vh */
+    }
+  
+    .ftop h3 {
+      font-size: 3vh; /* Adjust font size based on vh */
+      margin-bottom: 1vh; /* Adjust margin based on vh */
+    }
+  
+    .ftopcontents p {
+      font-size: 1.5vh; /* Adjust font size based on vh */
+      margin: 0.5vh 0; /* Adjust margin based on vh */
+    }
+  }
+  
+  .fdown {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5vh;
+  }
+  

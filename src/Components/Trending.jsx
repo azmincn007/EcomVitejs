@@ -68,10 +68,10 @@ function Trending() {
             <Swiper
               modules={[Navigation, Pagination, Scrollbar, A11y]}
               spaceBetween={0}
-              slidesPerView={1}
+              slidesPerView={3}
               breakpoints={{
                 600: {
-                  slidesPerView: 1.5,
+                  slidesPerView: 2.5,
                 },
                 960: {
                   slidesPerView: 2.5,
@@ -85,8 +85,8 @@ function Trending() {
               autoplay={{ delay: 3000 }}
             >
               {imageURLs.map((url, index) => (
-                <SwiperSlide key={index} style={{ border: '1px solid #e0e0e0', borderRadius: '5px', padding: '10px', height: '100%' }}>
-                  <img src={url} alt="" />
+                <SwiperSlide key={index} className="swiper-slide-border" style={{ padding: '10px' }}>
+                  <img src={url} alt=""  />
                 </SwiperSlide>
               ))}
             </Swiper>

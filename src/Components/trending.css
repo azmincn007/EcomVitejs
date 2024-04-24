@@ -1,57 +1,75 @@
-
-.trending-products{
-  padding:5% 5% ;
-
-   
-    
-   
-    
-
-    .leftcontents{
-      
-
-      .head{
-        font-family: "Volkhov", serif;
-        font-weight: 300;
-        letter-spacing: 0.3rem;
-        font-size: 2.2rem;
-        color: #484848;
-      }
-      .pcontent1{
-        font-family: "Poppins", sans-serif;
-        color: #8A8A8A;
-
-      }
-      .pcontent2{
-        font-family: "Poppins", sans-serif;
-        color: #484848;
-        font-size: 1.2rem;
-        letter-spacing: 0.3rem;
-
-      }
-
-      .exploreTrending {
-        font-family: "Poppins", sans-serif;
-        background-color: black;
-        color: white;
-        border: none;
-        border-radius: 6px;
-        outline: none;
-        width: 11rem;
-        height: 3rem;
-      }
-
-    }
-
-   
+.trending-products {
+  padding: 5% 5%;
 }
 
+.leftcontents .head {
+  font-family: "Volkhov", serif;
+  font-weight: 300;
+  letter-spacing: 0.3rem;
+  font-size: 2.2rem;
+  color: #484848;
+}
 
+.leftcontents .pcontent1 {
+  font-family: "Poppins", sans-serif;
+  color: #8a8a8a;
+  padding: .5rem 0rem;
+}
 
+.leftcontents .pcontent2 {
+  font-family: "Poppins", sans-serif;
+  color: #484848;
+  font-size: 1.2rem;
+  letter-spacing: 0.3rem;
+}
 
+.leftcontents .exploreTrending {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  width: 11rem;
+  height: 3rem;
+  padding: .5rem 0rem;
+}
 
+.swiper-slide-border {
+  border-radius: 5px;
+  padding: 10px;
+}
 
+/* Set height and width for images on smaller devices below 960px */
+@media (max-width: 960px) {
+  .swiper-slide img {
+    height: 200px;
+    width: 250px;
+  }
+}
 
+/* Set height and width for images on smaller devices below 600px */
+@media (max-width: 600px) {
+  .swiper-slide img {
+    height: 150px;
+    width: 200px;
+  }
+}
 
+@media (max-width: 860px) {
+  .leftcontents {
+    text-align: center;
+  }
+}
 
-  
+@media (max-width: 600px) {
+  .leftcontents .head {
+    font-size: 1.3rem !important;
+  }
+
+  .pcontent1{
+    font-size: .9rem;
+    
+  }
+}
+

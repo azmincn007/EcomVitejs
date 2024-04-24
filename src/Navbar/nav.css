@@ -35,10 +35,9 @@
 .contents.open {
   display: block;
         div{
-          padding: 5% 1%;
+          padding: 5% 5%;
         }
 }
-
 /* Media query for devices with max width of 768px */
 @media (max-width: 768px) {
   .menu-icon {
@@ -53,8 +52,8 @@
     top: 0%;
     right: 0%;
     width: 50%;
+    height: 100vh;
     background-color: #fff;
-    border: 1px solid #ccc;
     z-index: 10;
     padding-top: 3rem; /* Added top padding */
   }
@@ -87,14 +86,21 @@
   }
 }
 
-.signup-button button {
+.signup-button button , .logoutbutton button{
   width: 6rem;
   height: 2.2rem;
   background-color: black;
   color: white;
   outline: none;
   border-radius: 0.4rem;
+  outline: none;
+  border: none;
 }
 
 .linkdec{text-decoration: none;
 color: black;}
+
+.usernav{
+  display: flex;
+  align-items: center;
+}

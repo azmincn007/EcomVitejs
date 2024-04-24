@@ -7,6 +7,7 @@ import Alltrending from './Components/Prodctscomponent/Alltrending';
 import { ThemeProvider, createTheme } from '@mui/material';
 import Signup from './authentications/Signup';
 import Login from './authentications/Login';
+import Allpopular from './Components/Prodctscomponent/Allpopular';
 const queryClient = new QueryClient();
 const theme = createTheme();
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/trending' element={<Alltrending/>}/> 
         <Route path='/signup' element={<Signup/>}/> 
         <Route path='/login' element={<Login/>}/> 
+        <Route path='/allpopular' element={<Allpopular/>}/> 
 
 
 

@@ -1,0 +1,132 @@
+.trending-container{
+    width: 90%;
+    padding: 2rem 2rem;
+    
+  }
+  
+  .maincontainer-trending{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  }
+  
+  .favicon{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+  }
+  
+  .cards {
+    border: 2px solid black;
+    position: relative;
+    padding: 1.5rem 0rem;
+    background-color: white;
+    border-radius: 2rem;
+    display: flex; /* Add display flex */
+    flex-direction: column; /* Set flex direction to column */
+    justify-content: center; /* Align items vertically center */
+    align-items: center; /* Align items horizontally center */
+  }
+  
+  .cardcontainer{
+    padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cards img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .contentstr{
+     
+      font-size: 1rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      width: 100%;
+  
+  text-align: center;}
+  
+  .desctr{
+    font-size: .8rem;
+    color: rgba(0, 0, 0, 0.479);
+  }
+  
+  
+  .contentstr p {
+    margin: 0; /* Remove the default margin */
+  }
+  
+  .pr-order{
+    padding: 1.2rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+        font-family: "Poppins", sans-serif;
+  
+  
+        .price{
+          font-weight: bold;
+          color: red;
+          text-decoration: line-through;
+        } .buy-button button{
+          width: 9rem;
+          font-family: "Poppins", sans-serif;
+  
+          height: 1.6rem;
+          background-color: black;
+          color: white;
+          outline: none;
+          border-radius: 0.6rem;
+          outline: none;
+          border: none;
+        }
+      
+    }
+  
+    .offerprice{
+      font-weight: bold;
+      color: green;
+    } 
+  
+  
+    /* For extra small devices */
+  @media (max-width: 600px) {
+    .cards {
+      width: 80%; /* Adjust the width as needed */
+    }
+  
+    .cardcontainer {
+      padding: 1rem 0rem; /* Adjust padding as needed */
+    }
+  
+    .cards img {
+      width: 50px; /* Adjust image width as needed */
+      height: 50px; /* Adjust image height as needed */
+    }
+  
+    .contentstr p {
+      font-size: 0.6rem; /* Adjust font size as needed */
+    }
+  
+    .pr-order {
+      padding: 0.5rem 0.5rem; /* Adjust padding as needed */
+      font-size: 0.6rem; /* Adjust font size as needed */
+  
+      .price {
+        font-size: 0.5rem; /* Adjust font size as needed */
+      }
+  
+      .buy-button button {
+        width: 3rem; /* Adjust button width as needed */
+        font-size: 0.3rem; /* Adjust font size as needed */
+      }
+    }
+  
+    .offerprice {
+      font-size: 0.5rem; /* Adjust font size as needed */
+    }
+  }
+  
