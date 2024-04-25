@@ -8,6 +8,7 @@ import { ThemeProvider, createTheme } from '@mui/material';
 import Signup from './authentications/Signup';
 import Login from './authentications/Login';
 import Allpopular from './Components/Prodctscomponent/Allpopular';
+import Fav from './Navbar/Fav';
 const queryClient = new QueryClient();
 const theme = createTheme();
 function App() {
@@ -23,6 +24,8 @@ function App() {
         <Route path='/signup' element={<Signup/>}/> 
         <Route path='/login' element={<Login/>}/> 
         <Route path='/allpopular' element={<Allpopular/>}/> 
+        <Route path='/favorites' element={<Fav/>}/> 
+
 
 
 
